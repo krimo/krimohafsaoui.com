@@ -5,7 +5,7 @@ Template Name: Blog
 ?>
 <?php get_header(); ?>
 <aside class="sidebar">
-	<p>Find recent posts here. Be advised that these are mostly for web designers and/or developers to enjoy; they get technical quite often.</p>
+	<p>Find recent posts here. Be WARNED that these are mostly for web designers and/or developers to enjoy; they get technical quite often.</p>
 	<p>Visit <a href="">the archives</a> for more.</p>
 </aside>
 
