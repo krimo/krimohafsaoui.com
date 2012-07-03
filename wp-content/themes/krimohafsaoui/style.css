@@ -1,0 +1,560 @@
+/*
+Theme Name: Krimo Hafsaoui
+Theme URI: http://krimohafsaoui.com/
+Description: The theme for my website
+Author: Krimo Hafsaoui
+Author URI: http://krimohafsaoui.com/
+Version: 1.0
+Tags: Krimo Hafsaoui
+
+License:
+License URI:
+
+This theme is not to be reproduced, sold, distributed or plagiarized in any way even with attribution.
+*/
+
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; font:16px/26px "dejarip-1","dejarip-2","Helvetica Neue", Helvetica, Arial; font-weight:400;}
+
+::-moz-selection, ::selection { background: #333; color: #eee; text-shadow: 0 1px 0 #000; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em;}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+cite { font-style: normal; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { list-style-type:none; margin:0; padding:0;}
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; width: 100%;}
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "pt-serif-1", "pt-serif-2", serif;
+	margin:0;
+}
+
+p {margin:0;padding:0;}
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* ==============
+   Global Styles
+   ============== */
+
+p > a, .comments-link, .post-link a, .global-footer-link, .comment a, h2 > a, .single-post-info a {
+	text-decoration:none;
+	color:firebrick;/*Changes with wordpress*/
+}
+
+p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover, .comment a:hover, h2 > a:hover, .single-post-info a:hover {
+	border-bottom-width:1px;
+	border-bottom-style:dotted;
+	border-bottom-color:firebrick;
+}
+
+.wrapper{
+	position:relative;
+	width:90%;
+	margin:0 5%;
+}
+
+.global-header-container, .global-footer-container {background-color:firebrick;}
+
+.masthead {margin:1em 0;}
+
+.logo {
+	color:#fff;
+	font-family:"pt-serif-1", "pt-serif-2", serif;
+	font-size:1.85em;
+	letter-spacing:1px;
+	line-height:.7em;
+	margin-top:.3em;
+}
+
+.logo em {
+	font-size:.5em;
+	letter-spacing:0;
+}
+
+.main-nav-link{
+	display:block;
+	padding:15px 0;
+	margin-top:15px;
+	background:#fff; /* Fallback for beveled corners */
+    background:-moz-linear-gradient(225deg, transparent 5px, #fff 5px);
+    background:-o-linear-gradient(225deg, transparent 5px, #fff 5px);
+    background:-webkit-linear-gradient(225deg, transparent 5px, #fff 5px);
+	background-position: top right;
+	background-repeat: no-repeat;	
+	color:#333;
+	text-align:center;
+	text-decoration:none;
+	-moz-transition:opacity .2s ease-in;
+	-webkit-transition:opacity .2s ease-in;
+	-o-transition:opacity .2s ease-in;
+	-ms-transition:opacity .2s ease-in;
+	transition:opacity .2s ease-in;
+}
+
+.page-title {
+	font-size:2.358em;
+	line-height:1.25em;
+	margin:2em 0 1em 0;
+	color:white;
+	text-rendering: optimizeLegibility;
+	text-transform:uppercase;
+}
+
+.page-title.single {text-transform:none;}
+
+.animated-header-bg {
+	background-position:right bottom;
+	background-size:auto 100%;
+	position:absolute;
+	z-index:0;
+	width:100%;
+	height:100%;
+	right:0;
+	bottom:0;
+}
+
+.masthead, .page-title {position:relative;z-index:10;}
+
+#main {padding-top:1.618em;}
+
+.sidebar, .comment header, .blog-post header {margin-bottom:1em;}
+
+.global-footer-container {margin-top:1em;}
+
+.global-footer-container footer{
+	color:#fff;
+	padding:2em 0;
+	text-align:center;
+}	
+
+.global-footer-link {color:inherit;}
+
+.global-footer-link:hover {border-color:inherit;}
+
+/* ==================
+   END Global Styles
+   ================== */
+
+.single-post-info time, .post-link span, .kh-form legend, .comment header time{	
+	font-family:"pt-serif-1", "pt-serif-2", serif;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	display:block;
+}
+
+.single-post-info time em, .post-link span em, .kh-form legend em, .comment header time em {
+	text-transform:none;
+	letter-spacing:none;
+	font-style:italic;
+}
+
+.post-link {width:50%;}
+
+.previous.post-link {float:left;}
+
+.next.post-link {
+	float:right;
+	text-align:right;
+}
+
+.single-post-footer {
+	border-top:1px solid #dedede;
+	margin-top:1.618em;
+	padding-top:.55em;
+}
+
+/* ===== Primary Styles ========================================================
+   Author: Krimo Hafsaoui
+   ========================================================================== */
+
+.main-content section > h2 {
+	margin-bottom:.5em;
+}
+
+.single-post-incipit, .main-content section > p, .sidebar p {
+	margin-bottom:1.618em;
+}
+
+.single-post-incipit {
+	font-family:"pt-serif-1", "pt-serif-2", serif;
+	font-size:1.25em;
+	line-height:1.45em;
+	margin-bottom:1em;
+}
+
+.comments-header {
+	margin:3em 0 1em 0;
+	padding:.4em 0;
+	background:firebrick;
+	color:#fff;
+	text-indent:1%;
+	font-size:2.25em;
+}
+
+.comment {
+	margin-bottom:.5em;
+	padding:.25em 0 .5em 0;
+	border-bottom:1px dotted #333;
+}
+
+.comment.bypostauthor {
+}
+
+.gravatar {
+	float:left;
+	width:15%;
+	border-radius:50%;
+	border:1px solid #dedede;
+	overflow:hidden;
+}
+
+.comment-body {
+	float:right;
+	width:80%;
+}
+
+.comment header time {font-size:.85em;}
+
+.kh-form {margin-bottom:1.618em;}
+
+.kh-form label, .kh-form input {
+	display:block;
+}
+
+.kh-form label {margin-top:1em;}
+
+.kh-form input, .kh-form textarea {
+	padding:2.5%;
+	width:100%;
+	background:#eee;
+	border:1px solid #dedede;
+	color:#333;
+}
+
+.kh-form input:focus, .kh-form textarea:focus, .kh-form input:hover {
+	border-color:#777;
+	outline:none;
+}
+
+.kh-form input[type=submit] {
+	font-size:1.5em;
+	font-family:"dejarip-1", "dejarip-2", sans-serif;
+	margin-top:1em;
+}
+
+.blog-post {margin-bottom:2.618em;}
+
+.no-reply-if {
+	list-style-type:disc;
+	margin:0 0 1em 1em;
+}
+
+.portfolio-thumbnail {
+	margin:1em 0;
+}
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+	
+	nav {margin-top:1em;}
+	
+	.main-nav-link{
+		float:left;
+		width:22%;
+		margin:0 2%;
+		opacity:.35;
+	}
+	
+	.main-nav-link.active {opacity:1;}
+	
+	nav li:first-child a, .footer-links li:first-child .footer-link{ margin-left:0;}
+	nav li:last-child  a, .footer-links li:last-child .footer-link{ margin-right:0;}
+	
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+	nav ul li{
+		display:inline;
+	}	
+	.oldie .main-nav-link{
+		margin:0 0.7%;		
+	}
+	
+	/* ====================
+	    INTERMEDIATE: Main
+	   ==================== */
+	
+ 	.page-title {font-size:2.618em;}
+
+	.single-post-incipit {
+		font-size:1.45em;
+		line-height:1.45em;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+.page-title {
+	opacity:0;
+
+	-webkit-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	-moz-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	-ms-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	-o-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+
+	-webkit-transition-duration:800ms;
+	-moz-transition-duration:800ms;
+	-ms-transition-duration:800ms;
+	-o-transition-duration:800ms;
+	transition-duration:800ms;
+
+	-webkit-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	-moz-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	-ms-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	-o-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+
+	-webkit-transform:translate(50px,0);
+	-moz-transform:translate(50px,0);
+	-ms-transform:translate(50px,0);
+	-o-transform:translate(50px,0);
+	transform:translate(50px,0);
+
+	-webkit-transform-origin:bottom left;
+	-moz-transform-origin:bottom left;
+	-ms-transform-origin:bottom left;
+	-o-transform-origin:bottom left;
+	transform-origin:bottom left;
+
+	-webkit-transition-delay:.3s;
+	-moz-transition-delay:.3s;
+	-ms-transition-delay:.3s;
+	-o-transition-delay:.3s;
+	transition-delay:.3s;
+}
+
+.kh-blog .animated-header-bg {background:url('img/blog-bg.png') no-repeat right bottom;}
+.kh-work .animated-header-bg {background:url('img/work-bg.png') no-repeat right bottom;}
+.kh-about .animated-header-bg {background:url('img/about-bg.png') no-repeat right bottom;}
+.kh-contact .animated-header-bg {background:url('img/contact-bg.png') no-repeat right bottom;}
+
+.animated-header-bg {	
+	opacity:0;
+
+	background-size:auto 100%;
+	
+	-webkit-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	-moz-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	-ms-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	-o-transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	transition-property:opacity, -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+
+	-webkit-transition-duration:800ms;
+	-moz-transition-duration:800ms;
+	-ms-transition-duration:800ms;
+	-o-transition-duration:800ms;
+	transition-duration:800ms;
+
+	-webkit-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	-moz-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	-ms-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	-o-transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+	transition-timing-function:cubic-bezier(0.51,0.01,0.37,0.98);
+
+	-webkit-transform:translate(-1px,5px) rotate(-2.5deg);
+	-moz-transform:translate(-1px,5px) rotate(-2.5deg);
+	-ms-transform:translate(-1px,5px) rotate(-2.5deg);
+	-o-transform:translate(-1px,5px) rotate(-2.5deg);
+	transform:translate(-1px,5px) rotate(-2.5deg);
+
+	-webkit-transform-origin:bottom right;
+	-moz-transform-origin:bottom right;
+	-ms-transform-origin:bottom right;
+	-o-transform-origin:bottom right;
+	transform-origin:bottom right;
+}
+	.scene {overflow:hidden;}
+	
+	.scene .page-title, .scene .animated-header-bg {		
+		opacity:1;
+		-webkit-transform:translate(0,0) rotate(0deg);
+		-moz-transform:translate(0,0) rotate(0deg);
+		-ms-transform:translate(0,0) rotate(0deg);
+		-o-transform:translate(0,0) rotate(0deg);
+		transform:translate(0,0) rotate(0deg);
+	}
+
+/* ============
+    WIDE: Menu
+   ============ */
+	
+	.page-title {
+		float:left;
+		margin-top:3em;
+	}
+	
+	.logo {
+		float:left;
+		width:38%;
+	}
+	
+	.global-footer-container small {
+		float:left;
+	}
+	
+	.global-footer-links {
+		float:right;
+	}
+	
+	nav {
+		float:right;
+		width:61.484%;
+		margin-top:0;
+	}
+	
+	.main-nav-link:hover, .main-nav-link:visited, .footer-link:hover, .footer-link:visited{opacity:1;}
+
+/* ============
+    WIDE: Main
+   ============ */
+
+	.page-title {
+		font-size:4em;
+	}
+	
+	.single-post-info, .single-post-incipit {margin-top:0;}
+	
+	.single-post-incipit {
+		font-family:"pt-serif-1", "pt-serif-2", serif;
+		font-size:1.618em;
+		line-height:1.45em;
+	}
+
+	.main-content {
+		float:right;
+		width:61.8047%;
+	}
+		
+	.sidebar {
+		float:left;
+		width:28.1953%;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+	.page-title {max-width:100;}
+
+	.wrapper{
+		width:1026px; /* 1140px - 10% for margins */
+		margin:0 auto;
+	}
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
