@@ -15,5 +15,7 @@ RewriteRule . /index.php [L]
 
 order deny,allow
 deny from all
-#allow specific IP address 1 only
+#allow the mac to connect
 allow from 89.92.250.130
+#allow my phone
+allow from 37.8.171.74
