@@ -30,7 +30,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; font:16px/26px "dejarip-1","dejarip-2","Helvetica Neue", Helvetica, Arial; font-weight:400;}
+body { margin: 0; font-size: 1em; line-height: 1.4; font:16px/26px "open-sans-1","open-sans-2","Helvetica Neue", Helvetica, Arial; font-weight:400;}
 
 ::-moz-selection, ::selection { background: #333; color: #eee; text-shadow: 0 1px 0 #000; }
 
@@ -296,7 +296,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 
 .kh-form input[type=submit] {
 	font-size:1.5em;
-	font-family:"dejarip-1", "dejarip-2", sans-serif;
+	font-family:"open-sans-1", "open-sans-2", sans-serif;
 	margin-top:1em;
 }
 
