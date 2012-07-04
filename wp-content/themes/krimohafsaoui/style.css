@@ -229,11 +229,11 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	margin-bottom:.5em;
 }
 
-.single-post-incipit, .main-content section > p, .sidebar p {
+.incipit, .main-content section > p, .sidebar p {
 	margin-bottom:1.618em;
 }
 
-.single-post-incipit {
+.incipit {
 	font-family:"pt-serif-1", "pt-serif-2", serif;
 	font-size:1.25em;
 	line-height:1.45em;
@@ -351,7 +351,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	
  	.page-title {font-size:2.618em;}
 
-	.single-post-incipit {
+	.incipit {
 		font-size:1.45em;
 		line-height:1.45em;
 	}
@@ -493,10 +493,9 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 		font-size:4em;
 	}
 	
-	.single-post-info, .single-post-incipit {margin-top:0;}
+	.single-post-info, .incipit {margin-top:0;}
 	
-	.single-post-incipit {
-		font-family:"pt-serif-1", "pt-serif-2", serif;
+	.incipit {
 		font-size:1.618em;
 		line-height:1.45em;
 	}

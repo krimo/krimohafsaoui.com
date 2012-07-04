@@ -8,7 +8,7 @@
 			<article class="main-content">
 				
 				    <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-						<p class="single-post-incipit"><?=get_post_meta(get_the_ID(), 'incipit', true);?></p>
+						<p class="incipit"><?=get_post_meta(get_the_ID(), 'incipit', true);?></p>
 				        <?php the_content(); ?>
 				    </div>
 			<?php endwhile; endif; ?>
