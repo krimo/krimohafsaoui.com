@@ -30,7 +30,7 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 	
 </head>
-<body class="kh-<?php(isset($pagename) ? echo $pagename : echo 'work')?>">
+<body class="kh-<?php(isset($pagename) ? $theCurrentPage = $pagename : $theCurrentPage = 'work');echo $theCurrentPage;?>">
 <!--[if lt IE 7]><p class=chromeframe>Your browser <em>sucks</em>. <a href="http://browsehappy.com/">Upgrade to a real browser</a> or keep it but for the love of god <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>. It's free, installs in seconds even in a corporate environment, and you'll get the full experience on many sites.</p><![endif]-->
 
 	<div class="global-header-container">
