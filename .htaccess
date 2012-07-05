@@ -10,12 +10,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-
 # END WordPress
 
 order deny,allow
 deny from all
-#allow connection from home
+# allow connection from home
 allow from 89.92.250.130
-#allow connection from work
+# allow connection from work
 allow from 92.103.180.98
