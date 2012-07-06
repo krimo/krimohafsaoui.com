@@ -25,6 +25,14 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+function my_wp_nav_menu_args( $args = '' )
+{
+	$args['container'] = false;
+	return $args;
+} // function
+
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 ?>
 <?php
     function format_comment($comment, $args, $depth) {
