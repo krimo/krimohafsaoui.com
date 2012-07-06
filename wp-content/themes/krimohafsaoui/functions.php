@@ -40,7 +40,7 @@ function special_nav_class($classes, $item){
              $classes[] = "active";
      }
      return $classes;
-
+}
 ?>
 <?php
     function format_comment($comment, $args, $depth) {
