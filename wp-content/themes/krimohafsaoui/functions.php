@@ -33,6 +33,14 @@ function my_wp_nav_menu_args( $args = '' )
 } // function
 
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+     if(is_single() && $item->title == "Blog"){ //Notice you can change the conditional from is_single() and $item->title
+             $classes[] = "active";
+     }
+     return $classes;
+
 ?>
 <?php
     function format_comment($comment, $args, $depth) {

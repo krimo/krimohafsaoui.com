@@ -5,6 +5,7 @@
 	
 	<div class="kh-form">
 		<?php comment_form(array(
+			'comment_notes_before' => '',
 			'comment_notes_after' => '',
 			'title_reply' => ''
 		)); ?>
