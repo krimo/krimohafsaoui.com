@@ -295,10 +295,21 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	outline:none;
 }
 
-.kh-form input[type=submit] {
-	font-size:1.5em;
-	font-family:"open-sans-1", "open-sans-2", sans-serif;
-	margin-top:1em;
+input[type="submit"], button {
+		-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+		-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+		box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+		color:#333;
+		background-color:#FA2;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border:none;
+		font-family:'open-sans-1','open-sans-2', 'Lucida Grande', Helvetica, Arial, sans-serif;
+		font-size:16px;
+		padding:1em;
+		text-shadow:#FE6 0 1px 0;
+		margin-top:1em;
 }
 
 .blog-post {margin-bottom:2.618em;}

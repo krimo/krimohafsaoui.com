@@ -41,7 +41,7 @@
 			<div class="masthead clearfix">	
 				<div class="logo">Krimo Hafsaoui<br /><em>Web designer &amp; developer.</em></div>
 				<nav class="global-nav">
-					<?php wp_nav_menu( array('theme_location' => 'global-menu' ) ); ?>
+					<?php wp_nav_menu( array('theme_location' => 'global-menu' )); ?>
 				</nav>
 			</div>
 						
