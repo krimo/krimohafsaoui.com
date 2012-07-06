@@ -130,7 +130,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	letter-spacing:0;
 }
 
-.menu-item a{
+.page_item a{
 	display:block;
 	padding:15px 0;
 	margin-top:15px;
@@ -323,14 +323,14 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	
 	nav {margin-top:1em;}
 	
-	.menu-item a{
+	.page_item a{
 		float:left;
 		width:22%;
 		margin:0 2%;
 		opacity:.35;
 	}
 	
-	.menu-item.current-menu-item a {opacity:1;}
+	.page_item.current_page_item a {opacity:1;}
 	
 	nav li:first-child a, .footer-links li:first-child .footer-link{ margin-left:0;}
 	nav li:last-child  a, .footer-links li:last-child .footer-link{ margin-right:0;}
@@ -342,7 +342,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	nav ul li{
 		display:inline;
 	}	
-	.oldie .menu-item a{
+	.oldie .page_item a{
 		margin:0 0.7%;		
 	}
 	
@@ -484,7 +484,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 		margin-top:0;
 	}
 	
-	.menu-item a:hover, .menu-item a:visited, .footer-link:hover, .footer-link:visited{opacity:1;}
+	.page_item a:hover, .page_item a:visited, .footer-link:hover, .footer-link:visited{opacity:1;}
 
 /* ============
     WIDE: Main
