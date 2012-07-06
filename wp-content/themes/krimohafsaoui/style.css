@@ -130,7 +130,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	letter-spacing:0;
 }
 
-.main-nav-link{
+.menu-item a{
 	display:block;
 	padding:15px 0;
 	margin-top:15px;
@@ -323,14 +323,14 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	
 	nav {margin-top:1em;}
 	
-	.main-nav-link{
+	.menu-item a{
 		float:left;
 		width:22%;
 		margin:0 2%;
 		opacity:.35;
 	}
 	
-	.main-nav-link.active {opacity:1;}
+	.menu-item.current-menu-item a {opacity:1;}
 	
 	nav li:first-child a, .footer-links li:first-child .footer-link{ margin-left:0;}
 	nav li:last-child  a, .footer-links li:last-child .footer-link{ margin-right:0;}
@@ -342,7 +342,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	nav ul li{
 		display:inline;
 	}	
-	.oldie .main-nav-link{
+	.oldie .menu-item a{
 		margin:0 0.7%;		
 	}
 	
@@ -484,7 +484,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 		margin-top:0;
 	}
 	
-	.main-nav-link:hover, .main-nav-link:visited, .footer-link:hover, .footer-link:visited{opacity:1;}
+	.menu-item a:hover, .menu-item a:visited, .footer-link:hover, .footer-link:visited{opacity:1;}
 
 /* ============
     WIDE: Main

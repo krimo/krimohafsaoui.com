@@ -18,6 +18,13 @@ function custom_excerpt_length( $length ) {
 	return 35;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function register_my_menus() {
+  register_nav_menus(
+    array( 'header-menu' => __( 'Global Menu' ) )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 ?>
 <?php
     function format_comment($comment, $args, $depth) {

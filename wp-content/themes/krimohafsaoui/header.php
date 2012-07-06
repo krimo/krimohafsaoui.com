@@ -41,12 +41,7 @@
 			<div class="masthead clearfix">	
 				<div class="logo">Krimo Hafsaoui<br /><em>Web designer &amp; developer.</em></div>
 				<nav class="global-nav">
-					<ul>
-						<li><a href="work/" class="main-nav-link <?php if (is_page("work")) {echo "active";} ?>">Work</a></li>
-						<li><a href="blog/" class="main-nav-link <?php if (is_single() || is_page("blog")) {echo "active";} ?>">Blog</a></li>
-						<li><a href="about/" class="main-nav-link <?php if (is_page("about")) {echo "active";} ?>">About</a></li>
-						<li><a href="contact/" class="main-nav-link <?php if (is_page("contact")) {echo "active";} ?>">Contact</a></li>
-					</ul>
+					<?php wp_nav_menu( array('container' => '', 'theme_location' => 'global-menu' ) ); ?>
 				</nav>
 			</div>
 						
