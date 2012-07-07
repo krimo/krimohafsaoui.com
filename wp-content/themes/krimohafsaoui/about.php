@@ -5,7 +5,7 @@ Template Name: About
 ?>
 <?php get_header(); ?>
 <aside class="sidebar">
-	<img src="img/me.jpg" />
+	<img src="<?php bloginfo('template_directory'); ?>/img/me.jpg" />
 </aside>
 
 <article class="main-content">
