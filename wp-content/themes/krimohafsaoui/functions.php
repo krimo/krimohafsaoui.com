@@ -41,6 +41,21 @@ function special_nav_class($classes, $item){
      }
      return $classes;
 }
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'kh_portfolio',
+		array(
+			'labels' => array(
+				'name' => __( 'portfolio' ),
+				'singular_name' => __( 'portfolio' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'portfolio'),
+		)
+	);
+}
 ?>
 <?php
     function format_comment($comment, $args, $depth) {
