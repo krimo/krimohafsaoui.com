@@ -53,7 +53,7 @@ function create_post_type() {
 			'public' => true,
 			'has_archive' => 'work',
 			'rewrite' => array(
-				'slug' => 'work_item',
+				'slug' => 'work',
 				'with_front' => false
 				)
 		)
