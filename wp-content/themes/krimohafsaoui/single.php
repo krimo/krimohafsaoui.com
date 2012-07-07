@@ -5,12 +5,8 @@
 				<a href="#commentssection" class="comments-link"><?php comments_number("No comments yet.", "1 comment &raquo;", "% comments &raquo;"); ?></a>
 			</aside>
 			
-			<article class="main-content">
-				
-				    <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-						<p class="incipit"><?=get_post_meta(get_the_ID(), 'incipit', true);?></p>
-				        <?php the_content(); ?>
-				    </div>
+			<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
 				
 				<footer class="clearfix single-post-footer">
