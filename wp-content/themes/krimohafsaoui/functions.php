@@ -65,7 +65,7 @@ function custom_front_page($wp_query){
 
     if($wp_query->get('page_id') == get_option('page_on_front')):
 
-        $wp_query->set('post_type', 'kh-portfolio');
+        $wp_query->set('post_type', 'portfolio');
         $wp_query->set('page_id', ''); //Empty
 
         //Fix conditional Fucntions like is_front_page or is_single ect
