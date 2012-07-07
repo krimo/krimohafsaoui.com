@@ -230,7 +230,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	margin-bottom:.5em;
 }
 
-.incipit, .main-content section > p, .sidebar p {
+.incipit, .main-content section > p, .sidebar p, .main-content pre {
 	margin-bottom:1.618em;
 }
 
