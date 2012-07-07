@@ -51,8 +51,11 @@ function create_post_type() {
 				'singular_name' => __( 'portfolio' )
 			),
 			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'portfolio'),
+			'has_archive' => 'work',
+			'rewrite' => array(
+				'slug' => 'work_item',
+				'with_front' => false
+				)
 		)
 	);
 }
