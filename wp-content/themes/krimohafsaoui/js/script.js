@@ -11,7 +11,7 @@ $(document).ready(function () {
 		$('body').addClass(OSName);
 	}
 
-	 prettyPrint();
+	if ($('body').hasClass('kh-pretty')) {prettyPrint();}
 });
 
 
