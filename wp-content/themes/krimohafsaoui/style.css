@@ -343,7 +343,7 @@ input[type="submit"], button {
 		opacity:.35;
 	}
 	
-	.page_item.current_page_item a {opacity:1;}
+	.page_item.current_page_item a, .kh-single .page-item-11 a {opacity:1;}
 	
 	nav li:first-child a, .footer-links li:first-child .footer-link{ margin-left:0;}
 	nav li:last-child  a, .footer-links li:last-child .footer-link{ margin-right:0;}
