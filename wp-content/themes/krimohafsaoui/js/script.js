@@ -2,10 +2,6 @@
 
 */
 
-
-	if ($('body').hasClass('kh-pretty')) {
-		addEventListener('load', function (event) { prettyPrint() }, false);
-	}
 $(document).ready(function () {
 	$(".global-header-container").addClass('scene');
 	
@@ -14,6 +10,8 @@ $(document).ready(function () {
 		OSName="macintosh";
 		$('body').addClass(OSName);
 	}
+
+	 prettyPrint();
 });
 
 
