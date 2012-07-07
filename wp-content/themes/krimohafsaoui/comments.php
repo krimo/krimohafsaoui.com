@@ -1,5 +1,5 @@
 <section class="comments" id="commentssection">
-	<h2 class="comments-header"><?php comments_number("No comments yet.", "1 comment", "% comments"); ?></h2>
+	<h2 class="comments-header"><?php comments_number("Leave the first comment", "1 comment", "% comments"); ?></h2>
 	
 	<?php wp_list_comments('type=comment&callback=format_comment'); ?>
 	
