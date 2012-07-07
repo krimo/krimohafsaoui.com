@@ -10,7 +10,7 @@ Template Name: Work
 
 <article class="main-content">	
 	
-		<?php $the_query = new WP_Query( array( 'post_type' => 'portfolio', 'posts_per_page' => 10 ) ); ?>
+		<?php $the_query = new WP_Query( array( 'post_type' => 'kh_portfolio', 'posts_per_page' => 10 ) ); ?>
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 			<section id="post-<?php the_ID(); ?>" <?php post_class( 'portfolio-post' ); ?>>
 				<header>
