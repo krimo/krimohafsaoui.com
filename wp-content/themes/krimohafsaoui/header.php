@@ -20,10 +20,15 @@
 	
 	<?php if (is_single()) {
 		$color = get_post_meta($post->ID, 'kh_custom_color', true);
+		$customBg = get_post_meta($post->ID, 'kh_custom_bg', true);
 		if(!empty($color)) { ?>
 		    <style type="text/css">
-						p > a, .comments-link, .post-link a, .comment a, h2 > a, p > a:hover, .comments-link:hover, .post-link a:hover, .comment a:hover, h2 > a:hover, .single-post-info a, .single-post-info a:hover {border-bottom-color:<?php echo $color?>;color:<?php echo $color?>;}
+						p > a, .comments-link, .post-link a, .comment a, h2 > a, p > a:hover, .comments-link:hover, .post-link a:hover, .comment a:hover, h2 > a:hover, .single-post-info a, .single-post-info a:hover {
+							border-bottom-color:<?php echo $color?>;
+							color:<?php echo $color?>;
+						}
 						.global-header-container, .global-footer-container, .comments-header {background-color:<?php echo $color?>;}
+						.animated-header-bg {background:url('<?php bloginfo("template_directory"); ?>/img/<?=$customBg;?>.png') no-repeat right bottom;}
 			</style>
 		<?php }
 	} ?>
