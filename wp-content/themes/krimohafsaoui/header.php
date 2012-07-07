@@ -11,6 +11,10 @@
 
 	<meta name="viewport" content="width=device-width">
 	
+
+	<?php if( is_single()) { ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/prettify.css">
+	<?php } ?>
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
 	
@@ -30,7 +34,7 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 	
 </head>
-<body class="<?php if (is_front_page()) {echo "Work";} else { wp_title("", true); }?>">
+<body class="<?php if (is_front_page()) {echo "Work";} else { wp_title("", true); } if (is_single()) {echo " kh-pretty";} ?>">
 <!--[if lt IE 7]><p class=chromeframe>Your browser <em>sucks</em>. <a href="http://browsehappy.com/">Upgrade to a real browser</a> or keep it but for the love of god <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>. It's free, installs in seconds even in a corporate environment, and you'll get the full experience on many sites.</p><![endif]-->
 
 	<div class="global-header-container">

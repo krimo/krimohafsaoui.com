@@ -51,9 +51,9 @@ function create_post_type() {
 				'singular_name' => __( 'portfolio' )
 			),
 			'public' => true,
-			'has_archive' => 'work_piece',
+			'has_archive' => 'work',
 			'rewrite' => array(
-				'slug' => 'work',
+				'slug' => 'work_piece',
 				'with_front' => false
 				)
 		)

@@ -9,6 +9,10 @@ $(document).ready(function () {
 		OSName="macintosh";
 		$('body').addClass(OSName);
 	}
+
+	if ($('body').hasClass('kh-pretty')) {
+		addEventListener('load', function (event) { prettyPrint() }, false);
+	}
 });
 
 
