@@ -44,11 +44,7 @@ $(document).ready(function () {
 
 	if ($('body').hasClass('kh-pretty')) {prettyPrint();}
 
-	$("img").each(function() {
-		if ($this.attr('data-original')) {
-			$this.unveil();
-		}
-	});
+	$("img").unveil();
 });
 
 
