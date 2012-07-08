@@ -340,9 +340,20 @@ input[type="submit"], button {
   font-family: "open-sans-1", "open-sans-2", Helvetica, Arial;
   font-weight: 100;
   font-size:2em;
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -ms-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  transition:all .3s ease;
 }
 
-.portfolio-post-more-link:hover {background:yellow;color:#000;}
+.portfolio-post-more-link:hover {
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
 
 figure {position:relative;}
 
