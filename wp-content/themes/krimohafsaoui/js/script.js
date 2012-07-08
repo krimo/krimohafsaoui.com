@@ -3,7 +3,7 @@
 */
 (function( $ ) {
     $.fn.unveil = function () {
-        var images = this, loaded, inview;
+        var images = $(this), loaded, inview;
         
         this.one("unveil", function(){
             this.setAttribute( "src", this.getAttribute( "data-original" ) );
