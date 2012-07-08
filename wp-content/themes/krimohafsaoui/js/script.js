@@ -7,7 +7,7 @@
         
         this.one("unveil", function(){
             this.setAttribute( "src", this.getAttribute( "data-original" ) );
-            this.removeAttribute( "data-src" );
+            this.removeAttribute( "data-original" );
         });
         
         function unveil () {
