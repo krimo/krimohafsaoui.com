@@ -339,6 +339,8 @@ input[type="submit"], button {
   left:50%;
   margin-top:-23px;
   margin-left:-23px;
+  font-family: "open-sans-1", "open-sans-2", Helvetica, Arial;
+  font-weight: 100;
 }
 
 .portfolio-post-more-link:hover {background:yellow;}

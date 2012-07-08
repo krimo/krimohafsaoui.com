@@ -10,7 +10,7 @@
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 			<figure id="post-<?php the_ID(); ?>" <?php post_class( 'portfolio-post' ); ?>>
 				<img src="http://lorempixel.com/960/540" alt="<?php the_title(); ?>"/>
-				<a href="<?php the_permalink(); ?>" class="portfolio-post-more-link"></a>
+				<a href="<?php the_permalink(); ?>" class="portfolio-post-more-link">&raquo;</a>
 			</figure>
 		<?php endwhile;?>
 </article><!-- .main-content -->
