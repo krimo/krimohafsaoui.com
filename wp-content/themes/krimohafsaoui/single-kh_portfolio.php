@@ -9,7 +9,6 @@
 			<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
-			</article>	
 			<footer class="clearfix single-post-footer">
 				<div class="previous post-link">
 					<span>&laquo; Previously</span>
