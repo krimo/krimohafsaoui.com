@@ -20,23 +20,13 @@ function elementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
-/*
- * Lazy Load - jQuery plugin for lazy loading images
- *
- * Copyright (c) 2007-2012 Mika Tuupola
- *
- * Licensed under the MIT license:
- *   http://www.opensource.org/licenses/mit-license.php
- *
- * Project home:
- *   http://www.appelsiini.net/projects/lazyload
- *
- * Version:  1.7.2
- *
- */
-(function($, window) {
 
-    $window = $(window);
+;(function($){
+  $.extend($.fn, {
+    lazyload: function(){
+      // `this` refers to the current Zepto collection.
+      // When possible, return the Zepto collection to allow chaining.
+          $window = $(window);
 
     $.fn.lazyload = function(options) {
         var elements = this;
@@ -212,9 +202,10 @@ function elementInViewport(el) {
     $.inviewport = function(element, settings) {
          return !$.rightofscreen(element, settings) && !$.leftofscreen(element, settings) && 
                 !$.belowthefold(element, settings) && !$.abovethetop(element, settings);
-     };
-
-})(Zepto, window);
+    }
+   }
+  });
+})(Zepto);
 
 $(document).ready(function () {
 	$(".global-header-container").addClass('scene');
