@@ -321,9 +321,29 @@ input[type="submit"], button {
 	margin:0 0 1em 1em;
 }
 
-.portfolio-thumbnail {
-	margin:1em 0;
+.portfolio-post-more-link {
+  position:absolute;
+  display:block;
+  font-size:2em;
+  padding:.25em;
+  background:firebrick;
+  color:#000;
+  text-decoration:none;
+  border-radius:50%;
+  width:47px;
+  height:47px;
+  line-height:47px;
+  text-align:center;
+  z-index:100;
+  top:50%;
+  left:50%;
+  margin-top:-23px;
+  margin-left:-23px;
 }
+
+.portfolio-post-more-link:hover {background:yellow;}
+
+figure {position:relative;}
 /* =============================================================================
    Media Queries
    ========================================================================== */
