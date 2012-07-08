@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Pure CSS numéro vert</title>
+<style type="text/css" media="screen">
+	* {
+		margin:0;
+		padding:0;
+	}
+	
+	body {
+		padding:1em;
+		font-size:48px;
+		background:#eee;
+	}
+	
+	.nvert-wrapper {
+		width:14.5em;
+		position:relative;
+		font-family: arial, sans-serif;
+		font-weight:bold;
+		color:green;
+		z-index:10;
+		overflow:hidden;
+	}
+	.nvert-wrapper a {
+		display:block;
+		height:1em;
+		line-height:1.1em;
+		-moz-border-radius:1em;
+		-webkit-border-radius:1em;
+		border-radius:1em;
+		border:0.2em solid green;
+		text-align:right;
+		padding:0.2em 0.5em;
+		color:inherit;
+		text-decoration:none;
+		background:#fff;
+	}
+	.nvert-wrapper a:before {
+		content:"\25B6";
+		display:block;
+		position:absolute;
+		top:0.185em;
+		left:0.2em;
+		background:white;
+		height:1em;
+		width:1em;
+		padding:0.2em;
+		-moz-border-radius:0.7em;
+		-webkit-border-radius:0.7em;
+		border-radius:0.7em;
+		z-index:100;
+	}
+	.nvert-wrapper a:after {
+		content:"N° Vert";
+		color:white;
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		line-height:1.4em;
+		background:green;
+		font-size:1.2em;
+		padding:0 .75em 0 1.45em;
+		-moz-border-radius:0.75em;
+		-webkit-border-radius:0.75em;
+		border-radius:0.75em;
+	}
+	.nvert-wrapper small {
+		color:black;
+		font-size:0.5em;
+		float:right;
+		padding-right:1.4em;
+		margin-top:0.5em;
+	}
+</style>
+</head>
+
+<body>
+	<div class="nvert-wrapper">
+		<a href="tel:+33800068768">0 800 06 87 68</a>
+		<small>Appel gratuit depuis un poste fixe</small>
+	</div>
+</body>
+
+</html>

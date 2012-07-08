@@ -345,6 +345,8 @@ input[type="submit"], button {
 .portfolio-post-more-link:hover {background:yellow;color:#000;}
 
 figure {position:relative;}
+
+.portfolio-post {margin-bottom: 1.618em;}
 /* =============================================================================
    Media Queries
    ========================================================================== */
