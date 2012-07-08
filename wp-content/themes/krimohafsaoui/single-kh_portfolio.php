@@ -3,9 +3,9 @@
 			<aside class="sidebar single-post-info">
 				<?php edit_post_link(); ?>
 				<ul>
-					<li>Project type: <?php get_post_meta(get_the_ID(), 'kh_project_type', true); ?></li>
-					<li>Client: <?php get_post_meta(get_the_ID(), 'kh_project_client', true); ?></li>
-					<li>Date: <?php get_post_meta(get_the_ID(), 'kh_project_date', true); ?></li>
+					<li>Project type: <?=get_post_meta($post->ID, 'kh_project_type', true); ?></li>
+					<li>Client: <?=get_post_meta($post->ID, 'kh_project_client', true); ?></li>
+					<li>Date: <?=get_post_meta($post->ID, 'kh_project_date', true); ?></li>
 				</ul>
 			</aside>
 			
