@@ -3,9 +3,10 @@
 			<aside class="sidebar single-post-info">
 				<?php edit_post_link(); ?>
 				<ul>
-					<li>Project type: <?=get_post_meta($post->ID, 'kh_project_type', true); ?></li>
-					<li>Client: <?=get_post_meta($post->ID, 'kh_project_client', true); ?></li>
-					<li>Date: <?=get_post_meta($post->ID, 'kh_project_date', true); ?></li>
+					<li><strong>Project type:</strong> <?=get_post_meta($post->ID, 'kh_project_type', true); ?></li>
+					<li><strong>Client:</strong> <?=get_post_meta($post->ID, 'kh_project_client', true); ?></li>
+					<li><strong>Date:</strong> <?=get_post_meta($post->ID, 'kh_project_date', true); ?></li>
+					<li><strong>Project URL:</strong> <a href="<?=get_post_meta($post->ID, 'kh_project_url', true); ?>">visit &raquo;</a></li>
 				</ul>
 			</aside>
 			
@@ -13,6 +14,6 @@
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
 			<footer class="clearfix single-post-footer">
-				<p>No reproduction allowed.</p>
+				<p>No reproduction allowed; you've been warned.</p>
 			</footer>
 <?php get_footer(); ?>
