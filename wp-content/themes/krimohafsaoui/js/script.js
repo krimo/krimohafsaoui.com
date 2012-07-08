@@ -214,7 +214,7 @@ function elementInViewport(el) {
                 !$.belowthefold(element, settings) && !$.abovethetop(element, settings);
      };
 
-})($, window);
+})(Zepto, window);
 
 $(document).ready(function () {
 	$(".global-header-container").addClass('scene');
