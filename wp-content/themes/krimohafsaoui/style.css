@@ -332,7 +332,6 @@ input[type="submit"], button {
   border-radius:50%;
   width:47px;
   height:47px;
-  line-height:47px;
   text-align:center;
   z-index:100;
   top:50%;
