@@ -1,9 +1,10 @@
 /* Author: Krimo Hafsaoui
 
 */
-(function( $ ) {
-    $.fn.unveil = function () {
-        var images = $(this), loaded, inview;
+;(function($){
+  $.extend($.fn, {
+    unveil: function(){
+        var images = this, loaded, inview;
         
         this.one("unveil", function(){
             this.setAttribute( "src", this.getAttribute( "data-original" ) );
@@ -28,10 +29,10 @@
         
         $(window).scroll(unveil);
         unveil();
-        
-        return this;
-    };
-})(Zepto);
+      return this;
+    }
+  })
+})(Zepto)
 
 $(document).ready(function () {
 	$(".global-header-container").addClass('scene');
