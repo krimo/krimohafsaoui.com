@@ -13,13 +13,6 @@
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
 			<footer class="clearfix single-post-footer">
-				<div class="previous post-link">
-					<span>&laquo; Previously</span>
-					<?php previous_post_link('%link'); ?>
-				</div>
-				<div class="next post-link">
-					<span>Next on &raquo;</span>
-					<?php next_post_link('%link'); ?>
-				</div>		
+				<p>No reproduction allowed.</p>
 			</footer>
 <?php get_footer(); ?>
