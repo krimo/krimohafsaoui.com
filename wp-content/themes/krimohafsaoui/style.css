@@ -330,14 +330,14 @@ input[type="submit"], button {
   color:#000;
   text-decoration:none;
   border-radius:50%;
-  width:47px;
-  height:47px;
+  width:94px;
+  height:94px;
   text-align:center;
   z-index:100;
   top:50%;
   left:50%;
-  margin-top:-23px;
-  margin-left:-23px;
+  margin-top:-47px;
+  margin-left:-47px;
   font-family: "open-sans-1", "open-sans-2", Helvetica, Arial;
   font-weight: 100;
 }
