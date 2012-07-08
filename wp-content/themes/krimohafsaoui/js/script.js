@@ -195,7 +195,7 @@
                 !$.belowthefold(element, settings) && !$.abovethetop(element, settings);
      };
 
-})(Zepto, window);
+})($, window);
 
 $(document).ready(function () {
 	$(".global-header-container").addClass('scene');
