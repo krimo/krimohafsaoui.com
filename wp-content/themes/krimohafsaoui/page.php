@@ -9,7 +9,7 @@
 		<?php $the_query = new WP_Query( array( 'post_type' => 'kh_portfolio', 'posts_per_page' => 10 ) ); ?>
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 			<figure id="post-<?php the_ID(); ?>" <?php post_class( 'portfolio-post' ); ?>>
-				<img src="http://lorempixel.com/960/540" alt="<?php the_title(); ?>"/>
+				<img src="<?=get_post_meta($post->ID, 'kh_project_front_image', true); ?>" alt="<?php the_title(); ?>"/>
 				<a href="<?php the_permalink(); ?>" class="portfolio-post-more-link">></a>
 			</figure>
 		<?php endwhile;?>
