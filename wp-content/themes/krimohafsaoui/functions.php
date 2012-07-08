@@ -55,7 +55,8 @@ function create_post_type() {
 			'rewrite' => array(
 				'slug' => 'work',
 				'with_front' => false
-				)
+			),
+			'supports' => array('custom-fields')
 		)
 	);
 }
