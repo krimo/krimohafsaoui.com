@@ -230,8 +230,6 @@ $(document).ready(function () {
 	$("img").lazyload({ 
     	effect : "fadeIn"
 	});
-
-	var x = "boy";
 });
 
 
