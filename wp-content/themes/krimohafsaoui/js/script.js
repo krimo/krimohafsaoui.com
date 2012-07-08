@@ -1,6 +1,25 @@
 /* Author: Krimo Hafsaoui
 
 */
+function elementInViewport(el) {
+  var top = el.offsetTop;
+  var left = el.offsetLeft;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+
+  return (
+    top < (window.pageYOffset + window.innerHeight) &&
+    left < (window.pageXOffset + window.innerWidth) &&
+    (top + height) > window.pageYOffset &&
+    (left + width) > window.pageXOffset
+  );
+}
 /*
  * Lazy Load - jQuery plugin for lazy loading images
  *
@@ -38,7 +57,7 @@
       
             elements.each(function() {
                 var $this = $(this);
-                if (settings.skip_invisible && !$this.style.visibility=="visible") {
+                if (settings.skip_invisible && !elementInViewport($this)) {
                     return;
                 }
                 if ($.abovethetop(this, settings) ||
