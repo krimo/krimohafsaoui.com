@@ -56,7 +56,7 @@ function create_post_type() {
 				'slug' => 'work',
 				'with_front' => false
 			),
-			'supports' => array('custom-fields')
+			'supports' => array('custom-fields', 'title', 'editor', 'author')
 		)
 	);
 }
