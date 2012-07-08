@@ -325,7 +325,7 @@ input[type="submit"], button {
   position:absolute;
   display:block;
   background:firebrick;
-  color:#000;
+  color:#fff;
   text-decoration:none;
   border-radius:50%;
   width:80px;
@@ -335,14 +335,14 @@ input[type="submit"], button {
   z-index:100;
   top:50%;
   left:50%;
-  margin-top:-20px;
-  margin-left:-20px;
+  margin-top:-40px;
+  margin-left:-40px;
   font-family: "open-sans-1", "open-sans-2", Helvetica, Arial;
   font-weight: 100;
-  font-size:4em;
+  font-size:2em;
 }
 
-.portfolio-post-more-link:hover {background:yellow;}
+.portfolio-post-more-link:hover {background:yellow;color:#000;}
 
 figure {position:relative;}
 /* =============================================================================
