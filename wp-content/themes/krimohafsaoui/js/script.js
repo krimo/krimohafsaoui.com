@@ -32,6 +32,8 @@ $(document).ready(function () {
 	$("img.lazy").lazyload({ 
     	effect : "fadeIn"
 	});
+
+	var x = "boy";
 });
 
 
