@@ -227,7 +227,7 @@ $(document).ready(function () {
 
 	if ($('body').hasClass('kh-pretty')) {prettyPrint();}
 
-	$("img.lazy").lazyload({ 
+	$("img").lazyload({ 
     	effect : "fadeIn"
 	});
 
