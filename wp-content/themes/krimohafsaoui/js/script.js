@@ -2,9 +2,11 @@
 
 */
 
-$(document).ready(function () {
+$(window).load(function(){
 	$(".global-header-container").addClass('scene');
-	
+});
+
+$(document).ready(function () {
 	var OSName="";
 	if (navigator.appVersion.indexOf("Mac")!=-1 || navigator.appVersion.indexOf("X11")!=-1 || navigator.appVersion.indexOf("Linux")!=-1) {
 		OSName="macintosh";
