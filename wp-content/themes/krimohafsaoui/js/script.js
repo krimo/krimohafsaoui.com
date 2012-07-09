@@ -3,7 +3,9 @@
 */
 
 $(document).ready(function () {
-	$(".global-header-container").addClass('scene');
+	
+	setTimeout(function() {$(".global-header-container").addClass('scene');}, 1);
+	
 	
 	var OSName="";
 	if (navigator.appVersion.indexOf("Mac")!=-1 || navigator.appVersion.indexOf("X11")!=-1 || navigator.appVersion.indexOf("Linux")!=-1) {
