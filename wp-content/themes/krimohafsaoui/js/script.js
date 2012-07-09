@@ -2,7 +2,7 @@
 
 */
 
-$(window).load(function(){
+$(window).on('load', function(){
 	$(".global-header-container").addClass('scene');
 });
 
