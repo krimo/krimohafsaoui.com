@@ -32,7 +32,8 @@
 			</style>
 		<?php }
 	} ?>
-
+	
+	<script src="<?php bloginfo('template_url'); ?>/js/lzld.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 	
 	<script src="http://use.typekit.com/knw7quo.js"></script>
