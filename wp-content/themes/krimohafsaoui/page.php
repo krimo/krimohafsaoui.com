@@ -9,7 +9,7 @@
 		<?php $the_query = new WP_Query( array( 'post_type' => 'kh_portfolio', 'posts_per_page' => 10 ) ); ?>
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 			<figure id="post-<?php the_ID(); ?>" <?php post_class( 'portfolio-post' ); ?>>
-				<img data-original="<?=get_post_meta($post->ID, 'kh_project_front_image', true); ?>" src="http://www.krimohafsaoui.com/wp-content/uploads/2012/07/placeholder.png" alt="<?php the_title(); ?>"/>
+				<img data-src="<?=get_post_meta($post->ID, 'kh_project_front_image', true); ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="<?php the_title(); ?>" onload=lzld(this) onerror=lzld(this) />
 				<a href="<?php the_permalink(); ?>" class="portfolio-post-more-link">></a>
 			</figure>
 		<?php endwhile;?>
