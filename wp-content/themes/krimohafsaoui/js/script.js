@@ -10,7 +10,7 @@ $(document).ready(function () {
 			if ($('body').hasClass(srcs[i])) {
 				theSource = 'http://www.krimohafsaoui.com/wp-content/themes/krimohafsaoui/img/'+bgs[i];
 				img.src = theSource;
-				$('.animated-header-bg').css('background-image', theSource);
+				$('.animated-header-bg').css('background-image', 'url('+theSource+')');
 				$(".global-header-container").addClass('scene');
 			}
 		};
