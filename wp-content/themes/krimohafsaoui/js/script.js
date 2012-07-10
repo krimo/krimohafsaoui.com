@@ -3,7 +3,7 @@
 */
 
 $(document).ready(function () {
-	(function () {
+	var robert = function () {
 		var img = new Image(), srcs = ['Blog', 'Work', 'About', 'Contact'], bgs = ['blog-bg.png', 'work-bg.png', 'about-bg.png', 'contact-bg.png'];
 		
 		for (i=0;i<4;i++) {
@@ -17,7 +17,9 @@ $(document).ready(function () {
 				}
 			}
 		};
-	}); /* Function NOT YET PUSHED LIVE to smooth header animation.*/
+	}; /* Function NOT YET PUSHED LIVE to smooth header animation.*/
+	
+	robert();
 	
 	var OSName="";
 	if (navigator.appVersion.indexOf("Mac")!=-1 || navigator.appVersion.indexOf("X11")!=-1 || navigator.appVersion.indexOf("Linux")!=-1) {
