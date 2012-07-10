@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 	if ($('body').hasClass('kh-pretty')) {prettyPrint();}
 	
-	setTimeOut($('.global-header-container').addClass('scene'), 500);
+	setTimeout($('.global-header-container').addClass('scene'), 500);
 
 });
 
