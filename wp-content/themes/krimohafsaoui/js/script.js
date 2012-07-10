@@ -10,11 +10,8 @@ $(document).ready(function () {
 			if ($('body').hasClass(srcs[i])) {
 				theSource = 'http://www.krimohafsaoui.com/wp-content/themes/krimohafsaoui/img/'+bgs[i];
 				img.src = theSource;
-				console.log(img);
-				img.onLoad = function () { /* onLoad will only fire once and not if the image is cached, FUCK! */
-					$('.animated-header-bg').css('background-image', theSource);
-					$(".global-header-container").addClass('scene');
-				}
+				$('.animated-header-bg').css('background-image', theSource);
+				$(".global-header-container").addClass('scene');
 			}
 		};
 	}; /* Function NOT YET PUSHED LIVE to smooth header animation.*/
