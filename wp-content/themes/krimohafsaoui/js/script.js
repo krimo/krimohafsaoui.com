@@ -7,7 +7,7 @@ $(document).ready(function () {
 		var img = new Image(), srcs = ['Blog', 'Work', 'About', 'Contact'], bgs = ['blog-bg.png', 'work-bg.png', 'about-bg.png', 'contact-bg.png'];
 		
 		for (i=0;i<4;i++) {
-			console.log(i);
+			console.log($('body').hasClass(srcs[i]));
 			if ($('body').hasClass(srcs[i])) {
 				theSource = 'http://www.krimohafsaoui.com/wp-content/themes/krimohafsaoui/img/'+bgs[i];
 				img.src = theSource;
