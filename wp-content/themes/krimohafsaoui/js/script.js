@@ -9,9 +9,10 @@ $(document).ready(function () {
 		for (i=0;i<4;i++) {
 			if ($('body').hasClass(srcs[i])) {
 				theSource = 'http://www.krimohafsaoui.com/wp-content/themes/krimohafsaoui/img/'+bgs[i];
-				img.src = theSource;
-				$('.animated-header-bg').css('background-image', 'url('+theSource+')');
-				$(".global-header-container").addClass('scene');
+				$('body').load(theSource, function () {
+					$('.animated-header-bg').css('background-image', 'url('+theSource+')');
+					$(".global-header-container").addClass('scene');
+				});
 			}
 		};
 	}; /* Function NOT YET PUSHED LIVE to smooth header animation.*/
