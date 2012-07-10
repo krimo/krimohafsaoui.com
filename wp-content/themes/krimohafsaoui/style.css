@@ -451,12 +451,12 @@ figure {position:relative;}
 	-o-transition-delay:.3s;
 	transition-delay:.3s;
 }
-/* Uncomment when corresponding js is tested
+
 .Blog .animated-header-bg {background:url('img/blog-bg.png') no-repeat right bottom; background-size:auto 100%;}
 .Work .animated-header-bg {background:url('img/work-bg.png') no-repeat right bottom; background-size:auto 100%;}
 .About .animated-header-bg {background:url('img/about-bg.png') no-repeat right bottom; background-size:auto 100%;}
 .Contact .animated-header-bg {background:url('img/contact-bg.png') no-repeat right bottom; background-size:auto 100%;}
-*/
+
 .animated-header-bg {	
 	opacity:0;
 
