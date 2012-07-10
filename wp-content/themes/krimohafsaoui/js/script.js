@@ -7,10 +7,10 @@ $(document).ready(function () {
 		var img = new Image(), srcs = ['Blog', 'Work', 'About', 'Contact'], bgs = ['blog-bg.png', 'work-bg.png', 'about-bg.png', 'contact-bg.png'];
 		
 		for (i=0;i<4;i++) {
-			console.log($('body').hasClass(srcs[i]));
 			if ($('body').hasClass(srcs[i])) {
 				theSource = 'http://www.krimohafsaoui.com/wp-content/themes/krimohafsaoui/img/'+bgs[i];
 				img.src = theSource;
+				console.log(img);
 				img.onLoad = function () { /* onLoad will only fire once and not if the image is cached, FUCK! */
 					$('.animated-header-bg').css('background-image', theSource);
 					$(".global-header-container").addClass('scene');
