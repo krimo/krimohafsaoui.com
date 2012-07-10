@@ -2,9 +2,9 @@
 
 */
 
-$(window).load = function() {
+$(window).load(function() {
 	$('.global-header-container').addClass('scene');
-}
+});
 
 $(document).ready(function () {
 	var OSName="";
