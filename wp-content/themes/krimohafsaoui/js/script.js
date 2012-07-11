@@ -60,7 +60,7 @@ $(document).ready(function () {
 		var button = $(".go-to-top");
 		
 		$(window).scroll(function () {
-			if ($(this).scrollTop > 100) {
+			if ($(this).scrollY > 100) {
 				button.addClass("go-to-top-visible");
 			} else {
 				button.removeClass("go-to-top-visible");
