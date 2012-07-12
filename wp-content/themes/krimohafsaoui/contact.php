@@ -14,16 +14,6 @@ Template Name: Contact
 		<section>
 			<div id="errors">Errors</div>
 			<div id="success">Success</div>
-			<div id="loading">
-				<div id="circularG_1" class="circularG"></div>
-				<div id="circularG_2" class="circularG"></div>
-				<div id="circularG_3" class="circularG"></div>
-				<div id="circularG_4" class="circularG"></div>
-				<div id="circularG_5" class="circularG"></div>
-				<div id="circularG_6" class="circularG"></div>
-				<div id="circularG_7" class="circularG"></div>
-				<div id="circularG_8" class="circularG"></div>
-			</div>
 			<h2>Fill out this form, I'll answer in 48h tops</h2>
 			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form">
 				<fieldset>
@@ -32,7 +22,21 @@ Template Name: Contact
 					<label for="contact_form_email">Email:</label><input type="email" required/>
 
 					<label for="contact_form_body">Your message:</label><textarea name="contact_form_body" id="" cols="30" rows="10" required></textarea>
-
+					
+					<div id="loading" class="spinner">
+					    <div class="bar1"></div>
+					    <div class="bar2"></div>
+					    <div class="bar3"></div>
+					    <div class="bar4"></div>
+					    <div class="bar5"></div>
+					    <div class="bar6"></div>
+					    <div class="bar7"></div>
+					    <div class="bar8"></div>
+					    <div class="bar9"></div>
+					    <div class="bar10"></div>
+					    <div class="bar11"></div>
+					    <div class="bar12"></div>
+					</div>
 					<button type="submit" class="kh-contact-submit">Send &raquo;</button>
 				</fieldset>
 			</form>
