@@ -14,7 +14,17 @@ Template Name: Contact
 		<section>
 			<div id="errors">Errors</div>
 			<div id="success">Success</div>
-			<div id="loading">Loading...</div>
+			<div id="loading">
+				<div id="circularG_1" class="circularG"></div>
+				<div id="circularG_2" class="circularG"></div>
+				<div id="circularG_3" class="circularG"></div>
+				<div id="circularG_4" class="circularG"></div>
+				<div id="circularG_5" class="circularG"></div>
+				<div id="circularG_6" class="circularG"></div>
+				<div id="circularG_7" class="circularG"></div>
+				<div id="circularG_8" class="circularG"></div>
+				</div>
+			</div>
 			<h2>Fill out this form, I'll answer in 48h tops</h2>
 			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form">
 				<fieldset>
