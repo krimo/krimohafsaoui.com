@@ -356,14 +356,14 @@ input[type="submit"], button {
 	width:auto;
 }
 
-.kh-form #success {
+#success {
 	padding: 1em;
 	background: #B8F7BD;
 	border: 1px solid #247A24;
 	color: #247A24;
 }
 
-.kh-form #errors {
+#errors {
 	padding: 1em;
 	background: lightCoral;
 	border: 1px solid fireBrick;
