@@ -23,7 +23,6 @@ Template Name: Contact
 				<div id="circularG_6" class="circularG"></div>
 				<div id="circularG_7" class="circularG"></div>
 				<div id="circularG_8" class="circularG"></div>
-				</div>
 			</div>
 			<h2>Fill out this form, I'll answer in 48h tops</h2>
 			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form">
