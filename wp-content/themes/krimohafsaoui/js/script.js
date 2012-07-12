@@ -44,7 +44,7 @@
 
 */
 
-scroll = function(endY, duration) {
+scroll = function(endY, duration) { // to top button helper
     endY = endY || ($.os.android ? 1 : 0);
     duration = duration || 200;
 
@@ -72,7 +72,27 @@ scroll = function(endY, duration) {
     animate();
 };
 
-$(document).ready(function () {
+$(function () { // to top button
+			
+	var button = $(".go-to-top");
+	
+	$(window).scroll(function () {
+		if (window.pageYOffset > 100) {
+			button.addClass("go-to-top-visible");
+		} else {
+			button.removeClass("go-to-top-visible");
+		}
+	});
+
+	// scroll body to 0px on click
+	button.click(function (e) {
+		e.preventDefault();
+		window.scroll(0,800);
+		return false;
+	});
+});
+
+window.onload = function () {
 	var OSName="";
 	if (navigator.appVersion.indexOf("Mac")!=-1 || navigator.appVersion.indexOf("X11")!=-1 || navigator.appVersion.indexOf("Linux")!=-1) {
 		OSName="macintosh";
@@ -82,30 +102,7 @@ $(document).ready(function () {
 	if ($('body').hasClass('kh-pretty')) {prettyPrint();}
 	
 	setTimeout($('.global-header-container').addClass('scene'), 500);
-	
-	$(function () {
-		
-		var button = $(".go-to-top");
-		console.log(button);
-		
-		$(window).scroll(function () {
-			console.log('scrolling');
-			if (window.pageYOffset > 100) {
-				button.addClass("go-to-top-visible");
-			} else {
-				button.removeClass("go-to-top-visible");
-			}
-		});
-
-		// scroll body to 0px on click
-		button.click(function (e) {
-			e.preventDefault();
-			window.scroll(0,800);
-			return false;
-		});
-	});
-
-});
+};
 
 
 
