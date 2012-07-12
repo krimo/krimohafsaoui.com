@@ -146,7 +146,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	opacity:1;
 }
 
-.typekit-badge {bottom:-25px;}
+.typekit-badge {bottom:-25px !important;}
 
 .wrapper{
 	position:relative;

@@ -110,8 +110,8 @@ window.onload = function () {
 			type: 'POST',
 			url: destination,
 			data: theForm.serialize(),
-			success: function(data) {console.log(data)},
-			error: function() {alert('Error in your request')}
+			success: function(data) {console.log(data);},
+			error: function() {alert('Error in your request');}
 		});
 		return false;
 	});
