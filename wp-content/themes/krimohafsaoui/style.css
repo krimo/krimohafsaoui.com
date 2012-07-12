@@ -360,7 +360,6 @@ input[type="submit"], button {
 	display:none;
 	padding: .25em .25em;
 	margin-bottom:.4em;
-	font-size:2em;
 	background: #B8F7BD;
 	color: #247A24;
 	-webkit-transition: all .5s ease-out;
@@ -374,7 +373,6 @@ input[type="submit"], button {
 	display:none;
 	padding: .25em .25em;
 	margin-bottom:.4em;
-	font-size:2em;
 	background: lightCoral;
 	color: fireBrick;
 	-webkit-transition: all .5s ease-out;
@@ -383,6 +381,8 @@ input[type="submit"], button {
 	-ms-transition: all .5s ease-out;
 	transition: all .5s ease-out;
 }
+
+#errors span, #success span {font-size:2em;}
 
 div.spinner {
 	display:none;
