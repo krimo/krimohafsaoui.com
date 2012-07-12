@@ -76,13 +76,13 @@
 			</style>
 		<?php }
 	} ?>
-	
+	<!--
 	<script src="<?php bloginfo('template_url'); ?>/js/lzld.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 	
 	<script src="http://use.typekit.com/knw7quo.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	
+	-->
 </head>
 <body class="<?php if (is_front_page()) {echo "Work";} else { wp_title("", true); } if (is_single()) {echo " kh-pretty kh-single";} ?>">
 <!--[if lt IE 7]><p class=chromeframe>Your browser <em>sucks</em>. <a href="http://browsehappy.com/">Upgrade to a real browser</a> or keep it but for the love of god <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>. It's free, installs in seconds even in a corporate environment, and you'll get the full experience on many sites.</p><![endif]-->

@@ -9,10 +9,7 @@
 	</div>
 
 <!-- scripts concatenated and minified via ant build script-->
-<script src="<?php bloginfo('template_url'); ?>/js/zepto.js"></script>
-<?php if( is_single()) { ?>
-<script src="<?php bloginfo('template_url'); ?>/js/prettify.js"></script>
-<?php } ?>
+<script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <!-- end scripts-->
 
