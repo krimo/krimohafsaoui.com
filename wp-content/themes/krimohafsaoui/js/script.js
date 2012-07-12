@@ -96,7 +96,7 @@ $(function(){
 
 	//set global variables and cache DOM elements for reuse later
 	var form = $('.main-content').find('form'),
-		formElements = form.find('input[type!="submit"],textarea'),
+		formElements = form.find('input,textarea'),
 		formSubmitButton = form.find('[type="submit"]'),
 		errorNotice = $('#errors'),
 		successNotice = $('#success'),
