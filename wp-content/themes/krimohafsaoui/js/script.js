@@ -44,6 +44,34 @@
 
 */
 
+scroll = function(endY, duration) {
+    endY = endY || ($.os.android ? 1 : 0);
+    duration = duration || 200;
+
+    var startY = document.body.scrollTop,
+        startT  = +(new Date()),
+        finishT = startT + duration;
+
+    var interpolate = function (source, target, shift) { 
+        return (source + (target - source) * shift); 
+    };
+
+    var easing = function (pos) { 
+        return (-Math.cos(pos * Math.PI) / 2) + .5; 
+    };
+
+    var animate = function() {
+        var now = +(new Date()),
+            shift = (now > finishT) ? 1 : (now - startT) / duration;
+
+        window.scrollTo(0, interpolate(startY, endY, easing(shift)));
+
+        (now > finishT) || setTimeout(animate, 15);
+    };
+
+    animate();
+};
+
 $(document).ready(function () {
 	var OSName="";
 	if (navigator.appVersion.indexOf("Mac")!=-1 || navigator.appVersion.indexOf("X11")!=-1 || navigator.appVersion.indexOf("Linux")!=-1) {
@@ -72,9 +100,7 @@ $(document).ready(function () {
 		// scroll body to 0px on click
 		button.click(function (e) {
 			e.preventDefault();
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
+			window.scroll(0,800);
 			return false;
 		});
 	});
