@@ -357,17 +357,29 @@ input[type="submit"], button {
 }
 
 #success {
+	display:none;
 	padding: 1em;
 	background: #B8F7BD;
 	border: 1px solid #247A24;
 	color: #247A24;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	transition: all .5s ease-out;
 }
 
 #errors {
+	display:none;
 	padding: 1em;
 	background: lightCoral;
 	border: 1px solid fireBrick;
 	color: fireBrick;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	transition: all .5s ease-out;
 }
 
 div.spinner {
@@ -375,6 +387,15 @@ div.spinner {
     width: 54px;
     height: 54px;
     display: inline-block;
+	margin-top: 1em;
+	float: left;
+	margin-right: 1em;
+	display:none;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	transition: all .5s ease-out;
 }
     
 div.spinner div {
