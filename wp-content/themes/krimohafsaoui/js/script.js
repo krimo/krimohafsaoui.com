@@ -218,15 +218,17 @@ $(function(){
 		}
 		//if form is valid
 		else {
-			loading.show();
 			$.ajax({
 				url: form.attr('action'),
 				type: form.attr('method'),
 				data: form.serialize(),
+				beforeSend: function() {
+					loading.show();
+				},
 				success: function(){
 					showNotice('success');
 					form.get(0).reset();
-					//loading.hide();
+					loading.hide();
 				}
 			});
 		}
