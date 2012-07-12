@@ -137,7 +137,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 
 .go-to-top:hover {
 	text-decoration:none;
-	background:#ff7000;
+	background:firebrick;
 	color:#fff;
 }
 
@@ -145,6 +145,8 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	bottom:10px;
 	opacity:1;
 }
+
+.typekit-badge {bottom:-25px;}
 
 .wrapper{
 	position:relative;
