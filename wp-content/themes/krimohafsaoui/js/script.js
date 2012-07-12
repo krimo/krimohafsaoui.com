@@ -58,8 +58,10 @@ $(document).ready(function () {
 	$(function () {
 		
 		var button = $(".go-to-top");
+		console.log(button);
 		
 		$(window).scroll(function () {
+			console.log('scrolling');
 			if (window.pageYOffset > 100) {
 				button.addClass("go-to-top-visible");
 			} else {
