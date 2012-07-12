@@ -269,20 +269,7 @@ window.onload = function () {
 
 	if ($('body').hasClass('kh-pretty')) {prettyPrint();}
 	
-	setTimeout($('.global-header-container').addClass('scene'), 500);
-	
-/*	$('.kh-contact-submit').on('click', function() {
-		var theForm = $('.kh-form'), destination = theForm.attr('action');
-		
-		$.ajax({
-			type: 'POST',
-			url: destination,
-			data: theForm.serialize(),
-			success: function(data) {console.log(data);},
-			error: function() {alert('Error in your request');}
-		});
-		return false;
-	}); */
+	$('.global-header-container').addClass('scene');
 };
 
 
