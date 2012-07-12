@@ -218,7 +218,7 @@ $(function(){
 		}
 		//if form is valid
 		else {
-			loading.show();
+			$('#loading').show();
 			$.ajax({
 				url: form.attr('action'),
 				type: form.attr('method'),
@@ -226,7 +226,7 @@ $(function(){
 				success: function(){
 					showNotice('success');
 					form.get(0).reset();
-					loading.hide();
+					$('#loading').hide();
 				}
 			});
 		}
