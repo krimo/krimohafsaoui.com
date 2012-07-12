@@ -12,6 +12,9 @@ Template Name: Contact
 	<?php if (have_posts()) : while (have_posts()) : the_post();?>
 		<?php the_content(); ?>		
 		<section>
+			<div id="errors">Errors</div>
+			<div id="success">Success</div>
+			<div id="loading">Loading...</div>
 			<h2>Fill out this form, I'll answer in 48h tops</h2>
 			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form">
 				<fieldset>
