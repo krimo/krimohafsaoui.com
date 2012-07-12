@@ -226,6 +226,7 @@ $(function(){
 				success: function(){
 					showNotice('success');
 					form.get(0).reset();
+					//loading.hide();
 				}
 			});
 		}
