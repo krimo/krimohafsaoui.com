@@ -104,7 +104,6 @@ window.onload = function () {
 	setTimeout($('.global-header-container').addClass('scene'), 500);
 	
 	$('.kh-contact-submit').on('click', function() {
-		return false;
 		var theForm = $(this), destination = theForm.attr('action');
 		
 		$.ajax({
@@ -114,6 +113,7 @@ window.onload = function () {
 			success: function(data) {console.log(data)},
 			error: function() {alert('Error in your request')}
 		});
+		return false;
 	});
 };
 
