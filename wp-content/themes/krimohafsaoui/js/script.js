@@ -212,18 +212,6 @@ $(function(){
 		
 		//if form is not valid
 		if(!formok){
-			
-			//animate required field notice
-			$('#req-field-desc')
-				.stop()
-				.animate({
-					marginLeft: '+=' + 5
-				},150,function(){
-					$(this).animate({
-						marginLeft: '-=' + 5
-					},150);
-				});
-			
 			//show error message 
 			showNotice('error',errors);
 			
