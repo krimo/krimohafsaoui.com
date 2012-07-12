@@ -240,7 +240,7 @@ $(function(){
 	{
 		if(type == 'error'){
 			successNotice.hide();
-			errorNotice.find("li[id!='info']").remove();
+			errorNotice.find("li:not([id='info'])").remove();
 			for(x in data){
 				errorNotice.append('<li>'+data[x]+'</li>');	
 			}
