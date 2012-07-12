@@ -358,10 +358,10 @@ input[type="submit"], button {
 
 #success {
 	display:none;
-	padding: 1em;
-	margin-bottom:1.618em;
+	padding: .25em .25em;
+	margin-bottom:.4em;
+	font-size:2em;
 	background: #B8F7BD;
-	border: 1px solid #247A24;
 	color: #247A24;
 	-webkit-transition: all .5s ease-out;
 	-moz-transition: all .5s ease-out;
@@ -372,10 +372,10 @@ input[type="submit"], button {
 
 #errors {
 	display:none;
-	padding: 1em;
-	margin-bottom:1.618em;
+	padding: .25em .25em;
+	margin-bottom:.4em;
+	font-size:2em;
 	background: lightCoral;
-	border: 1px solid fireBrick;
 	color: fireBrick;
 	-webkit-transition: all .5s ease-out;
 	-moz-transition: all .5s ease-out;
