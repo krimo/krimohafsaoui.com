@@ -17,11 +17,11 @@ Template Name: Contact
 			<h2>Fill out this form, I'll answer in 48h tops</h2>
 			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form">
 				<fieldset>
-					<label for="contact_form_name">Name:</label><input type="text" required/>
+					<label for="contact_form_name">Name:</label><input name="contact_form_name" id="contact_form_name" type="text" required/>
 
-					<label for="contact_form_email">Email:</label><input type="email" required/>
+					<label for="contact_form_email">Email:</label><input name="contact_form_email" id="contact_form_email" type="email" required/>
 
-					<label for="contact_form_body">Your message:</label><textarea name="contact_form_body" id="" cols="30" rows="10" required></textarea>
+					<label for="contact_form_body">Your message:</label><textarea name="contact_form_body" id="contact_form_body" cols="30" rows="10" required></textarea>
 					
 					<div id="loading" class="spinner">
 					    <div class="bar1"></div>
