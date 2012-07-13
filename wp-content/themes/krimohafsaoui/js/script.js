@@ -169,7 +169,7 @@ $(function(){
 					errors.push(errorMessages.email + nameUC);
 				}
 				
-				this.focus(); //safari does not focus element an invalid element
+				this.focus().addClass('kh-invalid'); //safari does not focus element an invalid element
 				return false;
 			}
 			
@@ -178,7 +178,7 @@ $(function(){
 				//if HTML5 input required attribute is not supported
 				if(!Modernizr.input.required){
 					if(value == placeholderText){
-						this.focus();
+						this.focus().addClass('kh-invalid');
 						formok = false;
 						errors.push(nameUC + errorMessages.required);
 						return false;
@@ -191,7 +191,7 @@ $(function(){
 				if(!Modernizr.inputtypes.email){ 
 					var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
 				 	if( !emailRegEx.test(value) ){	
-						this.focus();
+						this.focus().addClass('kh-invalid');
 						formok = false;
 						errors.push(errorMessages.email + nameUC);
 						return false;
@@ -202,7 +202,7 @@ $(function(){
 			//check minimum lengths
 			if(minLength){
 				if( value.length < parseInt(minLength) ){
-					this.focus();
+					this.focus().addClass('kh-invalid');
 					formok = false;
 					errors.push(nameUC + errorMessages.minlength + minLength + ' charcters');
 					return false;

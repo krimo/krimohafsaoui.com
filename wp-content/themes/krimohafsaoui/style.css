@@ -356,6 +356,11 @@ input[type="submit"], button {
 	width:auto;
 }
 
+.kh-invalid {
+	color:firebrick;
+	border-color:red;
+}
+
 #success {
 	display:none;
 	padding: .25em .25em;
@@ -373,8 +378,8 @@ input[type="submit"], button {
 	display:none;
 	padding: .25em .25em;
 	margin-bottom:.4em;
-	background: lightCoral;
-	color: fireBrick;
+	background: lightcoral;
+	color: firebrick;
 	-webkit-transition: all .5s ease-out;
 	-moz-transition: all .5s ease-out;
 	-o-transition: all .5s ease-out;
