@@ -37,7 +37,7 @@ body.macintosh {font-weight:300;}
 
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
-blockquote { margin: 1em 40px; }
+blockquote { margin: 0; padding:1em 40px; border-left: 6px solid #EEE; }
 dfn { font-style: italic; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 ins { background: #ff9; color: #000; text-decoration: none; }
@@ -105,6 +105,8 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 	border-bottom-style:dotted;
 	border-bottom-color:firebrick;
 }
+
+blockquote p {font-family: "pt-serif-1", "pt-serif-2", serif; font-style: italic; font-size: 1.5em; line-height: 1.5em;}
 
 .go-to-top {
 	display:block;
