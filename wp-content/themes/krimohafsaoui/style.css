@@ -356,9 +356,9 @@ input[type="submit"], button {
 	width:auto;
 }
 
-.kh-invalid {
-	color:firebrick;
-	border-color:red;
+:invalid {
+	color:firebrick !important;
+	border-color:red !important;
 }
 
 #success {
