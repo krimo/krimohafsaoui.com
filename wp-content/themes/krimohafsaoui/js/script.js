@@ -157,9 +157,7 @@ $(function(){
 				minLength = this.getAttribute('data-minlength');
 			
 			if ($(this).is('input:invalid') || $(this).is('text-area:invalid')) {
-				$(this).addClass('kh-invalid').on('keydown', function() {
-					if ($(this).not('input:invalid') && $(this).hasClass('kh-invalid')) {$(this).removeClass('kh-invalid')}
-				});
+				$(this).addClass('kh-invalid');
 			}
 			
 			//if HTML5 formfields are supported			
@@ -224,6 +222,7 @@ $(function(){
 		}
 		//if form is valid
 		else {
+			formElements.each(function(){$(this).removeClass('kh-invalid')});
 			$.ajax({
 				url: form.attr('action'),
 				type: form.attr('method'),
