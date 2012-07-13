@@ -61,8 +61,8 @@ function create_post_type() {
 	);
 }
 
-add_filter('get_image_tag', 'kh_image_attachment', 10, 5);
-function kh_image_attachment($html, $id, $alt, $title, $align) {
+add_filter('get_image_tag', 'kh_image_attachment', 10, 6);
+function kh_image_attachment($html, $img_src, $id, $alt, $title, $align) {
 	$html = '<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="' . esc_attr($img_src) . '" id="'.esc_attr($id).'" alt="' . esc_attr($alt) . '" title="'.esc_attr($title).'" class="'.$class.'" onload=lzld(this) onerror=lzld(this) />';
 	return $html;
 }
