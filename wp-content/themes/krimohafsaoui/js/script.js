@@ -156,7 +156,7 @@ $(function(){
 				isRequired = this.getAttribute('required'),
 				minLength = this.getAttribute('data-minlength');
 			
-			if (this.is('input:invalid') || this.is('text-area:invalid')) {$(this).addClass('kh-invalid')}
+			if ($(this).is('input:invalid') || $(this).is('text-area:invalid')) {$(this).addClass('kh-invalid')}
 			
 			//if HTML5 formfields are supported			
 			if( (this.validity) && !this.validity.valid ){
