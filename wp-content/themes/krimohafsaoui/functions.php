@@ -63,8 +63,8 @@ function create_post_type() {
 
 add_filter('get_image_tag', 'kh_image_attachment', 10, 5);
 function kh_image_attachment($html, $id, $alt, $title, $align) {
-	$theSource = echo wp_get_attachment_image_src($id)[0];
-	$html = '<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="'.$theSource.'" id="'.esc_attr($id).'" alt="' . esc_attr($alt) . '" title="'.esc_attr($title).'" onload=lzld(this) onerror=lzld(this) />';
+	$image_source = wp_get_attachment_image_src( $attachment_id );
+	$html = '<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="'.$image_source[0].'" id="'.esc_attr($id).'" alt="' . esc_attr($alt) . '" title="'.esc_attr($title).'" onload=lzld(this) onerror=lzld(this) />';
 	return $html;
 }
 
