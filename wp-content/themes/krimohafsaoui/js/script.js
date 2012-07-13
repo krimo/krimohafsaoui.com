@@ -234,7 +234,7 @@ $(function(){
 					showNotice('success');
 					form.get(0).reset();
 					loading.hide();
-					setTimeout($('#success').animate({opacity: 0, top: '-50px'}, 500, 'ease-out', function() {$(this).css('display', 'none')}), 1200);
+					setTimeout($('#success').animate({opacity: 0, top: '-50px'}, 1500, 'ease-out', function() {$(this).css('display', 'none')}), 1200);
 				}
 			});
 		}
