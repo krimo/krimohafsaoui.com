@@ -61,6 +61,13 @@ function create_post_type() {
 	);
 }
 
+add_filter('get_image_tag', 'kh_image_attachment');
+function kh_image_attachment($html)
+{
+	$html = '<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="' . esc_attr($img_src) . '" alt="' . esc_attr($alt) . '" title="' . esc_attr($title).'" '.$hwstring.'class="'.$class.'" onload=lzld(this) onerror=lzld(this) />';;
+	return $html;
+}
+
 ?>
 <?php
     function format_comment($comment, $args, $depth) {
