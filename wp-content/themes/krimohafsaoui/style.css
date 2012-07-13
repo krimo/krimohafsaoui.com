@@ -107,6 +107,7 @@ p > a:hover, .comments-link:hover, .post-link a:hover, .global-footer-link:hover
 }
 
 blockquote p {font-family: "pt-serif-1", "pt-serif-2", serif; font-style: italic; font-size: 1.5em; line-height: 1.5em;}
+blockquote cite {font-family: "open-sans-1", "open-sans-2", sans-serif;}
 
 .go-to-top {
 	display:block;
