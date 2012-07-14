@@ -72,7 +72,9 @@
 							color:<?php echo $color?>;
 						}
 						.global-header-container, .global-footer-container, .comments-header {background-color:<?php echo $color?>;}
-						.animated-header-bg {background:url('<?php bloginfo("template_directory"); ?>/img/<?=$customBg;?>.png') no-repeat right bottom;}
+						@media only screen and (min-width: 768px) {
+							.animated-header-bg {background:url('<?php bloginfo("template_directory"); ?>/img/<?=$customBg;?>.png') no-repeat right bottom;}
+						}					
 			</style>
 		<?php }
 	} ?>
