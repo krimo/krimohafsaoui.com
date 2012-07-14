@@ -68,6 +68,13 @@ function kh_image_attachment($html, $id, $alt, $title, $align) {
 	return $html;
 }
 
+// add feed links to header
+if (function_exists('automatic_feed_links')) {
+	automatic_feed_links();
+} else {
+	return;
+}
+
 ?>
 <?php
     function format_comment($comment, $args, $depth) {
