@@ -55,7 +55,6 @@
 
 	<meta name="viewport" content="width=device-width">
 	
-
 	<?php if( is_single()) { ?>
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/prettify.css">
 	<?php } ?>
