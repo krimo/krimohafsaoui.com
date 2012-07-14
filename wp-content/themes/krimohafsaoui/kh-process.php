@@ -16,7 +16,7 @@ if( isset($_POST) ){
     $message = $_POST['contact_form_body'];
     
     //validate form data
-    
+    /*
     //validate name is not empty
     if(empty($name)){
         $formok = false;
@@ -43,9 +43,9 @@ if( isset($_POST) ){
         $formok = false;
         $errors[] = "Your message must be greater than 20 characters";
     }
-    
+    */
     //send email if all is ok
-    if($formok){
+   /* if($formok){*/
         $headers = "From: ".$email."\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         
@@ -55,9 +55,9 @@ if( isset($_POST) ){
                       <p><strong>Message: </strong> {$message} </p>
                       <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
         
-        mail("krimo.hafsaoui@gmail.com","New Enquiry",$emailbody,$headers);
+        mail("krimo@krimohafsaoui.com","New Enquiry",$emailbody,$headers);
         
-    }
+  /*  }*/
     
     //what we need to return back to our form
     $returndata = array(
