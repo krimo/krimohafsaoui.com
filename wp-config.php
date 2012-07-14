@@ -14,6 +14,8 @@
  * @package WordPress
  */
 
+define('WP_CACHE', true);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
@@ -86,4 +88,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-define('WP_CACHE', true);
