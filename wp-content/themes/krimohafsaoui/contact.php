@@ -15,7 +15,7 @@ Template Name: Contact
 			<div id="errors"><span>There are errors in the form.</span></div>
 			<div id="success"><span>Your message has been sent.</span></div>
 			<h2>Fill out this form, I'll answer in 48h tops</h2>
-			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form" method="POST">
+			<form action="<?php bloginfo('template_directory'); ?>/kh-process.php" class="kh-form" method="post">
 				<fieldset>
 					<label for="contact_form_name">Name:</label><input name="contact_form_name" id="contact_form_name" type="text" required/>
 
