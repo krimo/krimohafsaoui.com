@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST)) {
+if (isset($_POST['submit'])) {
 	$name = filter_var($_POST['contact_form_name'], FILTER_SANITIZE_STRING);
 	$email = filter_var($_POST['contact_form_email'], FILTER_SANITIZE_EMAIL);
 	$message = filter_var($_POST['contact_form_body'], FILTER_SANITIZE_STRING);
