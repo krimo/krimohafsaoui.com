@@ -15,49 +15,16 @@ if( isset($_POST) ){
     $email = $_POST['contact_form_email'];
     $message = $_POST['contact_form_body'];
     
-    //validate form data
-    /*
-    //validate name is not empty
-    if(empty($name)){
-        $formok = false;
-        $errors[] = "You have not entered a name";
-    }
+    $headers = "From: ".$email."\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     
-    //validate email address is not empty
-    if(empty($email)){
-        $formok = false;
-        $errors[] = "You have not entered an email address";
-    //validate email address is valid
-    }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $formok = false;
-        $errors[] = "You have not entered a valid email address";
-    }
+    $emailbody = "<p>You have received a new message from the enquiries form on your website.</p>
+                  <p><strong>Name: </strong> {$name} </p>
+                  <p><strong>Email Address: </strong> {$email} </p>
+                  <p><strong>Message: </strong> {$message} </p>
+                  <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
     
-    //validate message is not empty
-    if(empty($message)){
-        $formok = false;
-        $errors[] = "You have not entered a message";
-    }
-    //validate message is greater than 20 characters
-    elseif(strlen($message) < 20){
-        $formok = false;
-        $errors[] = "Your message must be greater than 20 characters";
-    }
-    */
-    //send email if all is ok
-   /* if($formok){*/
-        $headers = "From: ".$email."\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        
-        $emailbody = "<p>You have received a new message from the enquiries form on your website.</p>
-                      <p><strong>Name: </strong> {$name} </p>
-                      <p><strong>Email Address: </strong> {$email} </p>
-                      <p><strong>Message: </strong> {$message} </p>
-                      <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
-        
-        mail("krimo@krimohafsaoui.com","New Enquiry",$emailbody,$headers);
-        
-  /*  }*/
+    mail("krimo@krimohafsaoui.com","New Enquiry",$emailbody,$headers);
     
     //what we need to return back to our form
     $returndata = array(
